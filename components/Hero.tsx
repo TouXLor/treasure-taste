@@ -1,4 +1,6 @@
 import React from "react";
+import Threecorndogs from "../img/threecorndogs.png";
+import Sushiburrito from "../img/sushiburrito.png";
 
 const Hero: React.FC = () => {
   return (
@@ -19,7 +21,7 @@ const Hero: React.FC = () => {
             <div className="flex flex-col items-center group animate-float-up delay-100">
               <div className="relative w-56 h-56 md:w-64 md:h-64 flex items-center justify-center transition-transform duration-500 hover:scale-105 hover:-rotate-2">
                 <img
-                  src="./img/threecorndogs.png"
+                  src={Threecorndogs}
                   alt="Korean Corndog"
                   className="w-full h-full object-contain drop-shadow-2xl -rotate-12"
                 />
@@ -33,7 +35,7 @@ const Hero: React.FC = () => {
             <div className="flex flex-col items-center group animate-float-up delay-300">
               <div className="relative w-56 h-56 md:w-72 md:h-72 flex items-center justify-center transition-transform duration-500 hover:scale-105 hover:rotate-2">
                 <img
-                  src="./img/sushiburrito.png"
+                  src={Sushiburrito}
                   alt="Sushi Burrito"
                   className="w-full h-full object-contain drop-shadow-2xl rotate-6 scale-110"
                 />

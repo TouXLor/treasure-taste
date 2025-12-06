@@ -1,26 +1,30 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
+import Sushiburrito1 from "../img/shushiburrito1.jpg";
+import Sushiburrito2 from "../img/suhi3.jpg";
+import Sushiburrito3 from "../img/suhsi4.jpg";
+import Sushiburrito4 from "../img/sushi2.jpg";
 
 const sushiItems = [
   {
     name: "Spicy Tuna",
     price: "$14.50",
-    image: "./img/shushiburrito1.jpg",
+    image: Sushiburrito1,
   },
   {
     name: "Salmon Run",
     price: "$15.00",
-    image: "./img/suhi3.jpg",
+    image: Sushiburrito2,
   },
   {
     name: "Crunchy Crab",
     price: "$13.50",
-    image: "./img/suhsi4.jpg",
+    image: Sushiburrito3,
   },
   {
     name: "Veggie Fresh",
     price: "$12.00",
-    image: "./img/sushi2.jpg",
+    image: Sushiburrito4,
   },
 ];
 

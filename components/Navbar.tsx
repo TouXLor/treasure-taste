@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { UtensilsCrossed, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
+import Logo from "../img/treasureLogo.png";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,11 +11,7 @@ const Navbar: React.FC = () => {
       <div className="flex items-center gap-3">
         {/* <div className="h-12 w-12 rounded-full border border-amber-300 flex items-center justify-center bg-white/50 backdrop-blur-sm shadow-sm"> */}
         {/* <UtensilsCrossed className="text-amber-400 h-6 w-6" /> */}
-        <img
-          src="./img/treasureLogo.png"
-          alt="menu icon"
-          className="h-12 w-12 object-contain"
-        />
+        <img src={Logo} alt="menu icon" className="h-12 w-12 object-contain" />
         {/* </div> */}
         <div className="flex flex-col">
           <span className="text-amber-400 font-semibold text-lg tracking-tight leading-none">

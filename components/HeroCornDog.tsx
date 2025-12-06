@@ -1,5 +1,6 @@
 import React from "react";
 import { Instagram, Facebook } from "lucide-react";
+import Threecorndogs from "../img/threecorndogs.png";
 
 const HeroCornDog: React.FC = () => {
   return (
@@ -21,7 +22,7 @@ const HeroCornDog: React.FC = () => {
         <div className="relative flex-shrink-0">
           <div className="w-64 h-[420px] md:w-72 md:h-[460px] lg:w-80 lg:h-[600px] flex items-center justify-center">
             <img
-              src="/img/threecorndogs.png"
+              src={Threecorndogs}
               alt="Gourmet corndog"
               className="h-full object-contain drop-shadow-2xl"
             />
