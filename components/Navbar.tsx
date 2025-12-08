@@ -6,13 +6,12 @@ import Logo from "../img/treasureLogo.png";
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const closeMenu = () => setIsOpen(false);
+
   return (
     <nav className="w-full py-8 px-6 md:px-12 flex items-center justify-between max-w-7xl mx-auto relative z-50">
       <div className="flex items-center gap-3">
-        {/* <div className="h-12 w-12 rounded-full border border-amber-300 flex items-center justify-center bg-white/50 backdrop-blur-sm shadow-sm"> */}
-        {/* <UtensilsCrossed className="text-amber-400 h-6 w-6" /> */}
         <img src={Logo} alt="menu icon" className="h-12 w-12 object-contain" />
-        {/* </div> */}
         <div className="flex flex-col">
           <span className="text-amber-400 font-semibold text-lg tracking-tight leading-none">
             Treasure Taste
@@ -62,34 +61,34 @@ const Navbar: React.FC = () => {
       {/* Mobile Menu Dropdown */}
       {isOpen && (
         <div className="absolute top-24 left-0 right-0 bg-[#FFFBF0] border-t border-amber-100 shadow-xl p-6 md:hidden flex flex-col gap-4 items-center animate-float-up">
-          <a
-            href="#"
+          <Link
+            to="/"
             className="text-stone-800 font-medium text-lg"
-            onClick={() => setIsOpen(false)}
+            onClick={closeMenu}
           >
             Home
-          </a>
-          <a
-            href="#menu"
+          </Link>
+          <Link
+            to="/menu"
             className="text-stone-800 font-medium text-lg"
-            onClick={() => setIsOpen(false)}
+            onClick={closeMenu}
           >
             Menu
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="/contact"
             className="text-stone-800 font-medium text-lg"
-            onClick={() => setIsOpen(false)}
+            onClick={closeMenu}
           >
             Contact
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="/about"
             className="text-stone-800 font-medium text-lg"
-            onClick={() => setIsOpen(false)}
+            onClick={closeMenu}
           >
             About
-          </a>
+          </Link>
         </div>
       )}
     </nav>
