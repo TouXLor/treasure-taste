@@ -1,8 +1,10 @@
 import React from "react";
-import { Instagram, Facebook } from "lucide-react";
+import { Instagram, Facebook, ChevronRight } from "lucide-react";
 import Threecorndogs from "../img/threecorndogs.png";
+import { useNavigate } from "react-router-dom";
 
 const HeroCornDog: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <section className="relative flex-1 flex items-center justify-center">
       {/* Background */}
@@ -37,7 +39,34 @@ const HeroCornDog: React.FC = () => {
           </h2>
         </div>
       </div>
-
+      {/* ➜ RIGHT-SIDE ARROW BUTTON */}
+      <button
+        className="
+          absolute 
+          right-6 
+          top-1/2 
+          -translate-y-1/2 
+          h-14 w-14 
+          rounded-full 
+          border border-amber-300/40 
+          flex items-center justify-center 
+          bg-white/10 
+          backdrop-blur-sm 
+          hover:bg-white/20 
+          hover:border-amber-400 
+          transition-all duration-300 
+          group
+        "
+        onClick={() => navigate("/menu")}
+      >
+        <ChevronRight
+          className="
+            w-8 h-8 text-amber-500 
+            group-hover:translate-x-1 
+            transition-all duration-300
+          "
+        />
+      </button>
       {/* Social icons */}
       <div className="absolute left-6 bottom-6 flex items-center gap-4 text-white/80">
         <Instagram className="w-5 h-5 hover:text-white transition-colors cursor-pointer" />
